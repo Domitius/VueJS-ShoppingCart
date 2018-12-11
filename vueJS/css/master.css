@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* elements */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+/* Classes */
+.bold {
+  font-weight: bold;
+}
+
+.button {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+/* Add and Remove Buttons */
+.cartButton {
+  border: solid thick red;
+  border-radius: 20px;
+}
+
+.product {
+  flex: 1;
+  border: solid thin black;
+  margin: 0 1% 0 1%;
+  padding: 10px;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+.image {
+  border: solid thin black;
+  width: 40%;
+  height: auto;
+}
+
+.tableRemove {
+  font-size: 22px;
+  color: red;
+  cursor: pointer;
+}
+/* End of Classes */
+
+#header {
+  top: 0;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-bottom: solid medium black;
+}
+
+#app {
+  background-color: black;
+  padding-top: 10px;
+}
+
+div#productList {
+  margin: 0 1% 1% 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+}
+
+/* Number of Items in the Cart Start (Red Box) */
+#cartIcon {
+  margin-top: 8%;
+  background-color: red;
+  color: black;
+  position: absolute;
+  top: 10;
+  right: 0;
+  width: 5%;
+  height: 40px;
+  display: flex;
+  position: fixed;
+}
+
+#cartIcon p {
+  margin-left: 50%;
+  margin-top: 10%;
+  color: white;
+}
+/* End. */
+
+#cart {
+  width: 85%;
+  margin: 5% auto 2% auto;
+  display: block;
+  color: white;
+}
+
+/* Table Footer */
+#tableStats {
+  display: flex;
+  flex-direction: row;
+}
+
+#total {
+  font-size: 20px;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+#checkout {
+  border-radius: 50px;
+  border: solid medium black;
+  height: 45px;
+  width: auto;
+  max-width: 10%;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+/* Table Footer End */
